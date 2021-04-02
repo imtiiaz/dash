@@ -1,0 +1,423 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Responsive  Landing Page Template  
+    Template URI:
+    Description: This is html5 template
+    Author: 
+    Author URI: 
+    Version: 2
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Template default css
+    2. Header Section
+    3. Slider Section
+    4. Service Section 
+    5. About Section
+    6. Career Section
+    7. Testimonials Section
+    8. Subscribe Section 
+    9. Pricing Section
+    10. Counter Section
+    11. Footer Section
+    12. Scrollup
+    13. Blog details
+    
+    
+-----------------------------------------------------------------------------------*/
+
+
+/* 1.---------------------------------------------
+                Template default css
+------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0 30px;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #171c35;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+
+a:focus,
+.button:focus,
+select:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+button:focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.overflow_x {
+    overflow-x: hidden;
+}
+
+
+*::-moz-placeholder {}
+
+
+/* 2.-------------------------------------------
+                  User  Dashboard Header
+-----------------------------------------------*/
+
+#dashboard_header {
+    padding: 20px 0 40px;
+    ;
+}
+
+.dashboard_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard_menu .logo {
+    width: 260px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard_menu .logo img {
+    width: 80px;
+    height: 70px;
+}
+
+.dashboard_menu .logo span {
+    margin-left: 10px;
+    padding: 0 5px;
+    font-size: 26px;
+    font-weight: 300;
+    border-left: 1px solid #0d132f;
+    border-right: 1px solid #0d132f;
+}
+
+.dashboard_menu .propic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* 4.-------------------------------------------
+             User  Dashboard Sidebar
+-----------------------------------------------*/
+
+.user_dashboard_sidebar .side_bar_top .form-control {
+    background: transparent;
+    border-bottom: 1px solid #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    font-size: 20px;
+    margin: 10px 0 30px;
+}
+
+.user_dashboard_sidebar .nav-tabs {
+    display: inherit;
+    border: 0;
+}
+
+.user_dashboard_sidebar .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+.user_dashboard_sidebar .nav-tabs .nav-item .nav-link {
+    font-size: 20px;
+    color: #171c35;
+    font-weight: 600;
+    border: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.user_dashboard_sidebar .nav-tabs .nav-item .nav-link.active {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.user_dashboard_sidebar .nav-tabs .nav-item .nav-link.active:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(to right top, #e16b10, #e65b1d, #e94929, #eb3335, #eb1241);
+}
+
+.user_dashboard_sidebar .nav-tabs .nav-item:nth-child(1) .nav-link.active:after {
+    content: none;
+}
+
+.user_dashboard_sidebar .nav-tabs .nav-item .nav-link span {
+    float: right;
+}
+
+.user_dashboard_sidebar form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user_dashboard_sidebar form button {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: #171c35;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 12px 50px 14px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+}
+
+.activer {
+    margin-top: 20px;
+}
+
+.activer h4 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.toggle_switch .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle_switch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle_switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle_switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle_switch input:checked + .slider {
+    background-color: #21f339;
+}
+
+.toggle_switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.toggle_switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.toggle_switch .slider.round {
+    border-radius: 34px;
+}
+
+.toggle_switch .slider.round:before {
+    border-radius: 50%;
+}
+
+/* 5.-------------------------------------------
+               Main User  Dashboard
+-----------------------------------------------*/
+
+.main_user_dashbaord .heading p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.main_user_dashbaord .pro_pic {
+    display: flex;
+    align-items: center;
+}
+
+.main_user_dashbaord .pro_pic img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.main_user_dashbaord .pro_pic .age_btn {
+    padding-left: 20px;
+}
+
+.main_user_dashbaord .pro_pic .age_btn a {
+    color: #171c35;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #575252;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.main_user_dashbaord .pro_pic .age_btn label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.main_user_dashbaord .pro_pic .age_btn select {
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.user_dahsboard_form .form-group {
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.user_dahsboard_form .form-group label {
+    display: block;
+    color: #171c35;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+
+.user_dahsboard_form .form-group .form-control{
+    max-width: 500px;
+    height: 50px;
+    border-radius: 15px;
+     border: 1px solid #575252;
+    font-size: 18px;
+    color: #171c35; 
+}
+.user_dahsboard_form .form-group .form-control.name {
+    max-width: 320px;
+}
+
+.user_dahsboard_form button {
+    padding: 10px 60px;
+    font-size: 18px;
+    font-weight: 500;
+       border: 1px solid #575252;
+    border-radius: 30px;
+    background: #fff;
+    margin-top: 30px;
+}
+
+.heading p.mt-0 {
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* 6.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+/* 7.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+/* 8.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+
+/* 9.-------------------------------------------
+                    About Section
+-----------------------------------------------*/

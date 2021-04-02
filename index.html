@@ -1,0 +1,306 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>User Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-black.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- all css here -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--=======================================================
+                       01. Header Section Start
+   ==========================================================-->
+
+
+    <header id="dashboard_header">
+        <div class="container-fluid">
+            <div class="dashboard_menu">
+                <div class="logo">
+                    <img src="images/logo-black.png" alt="not-found">
+                    <span>
+                        Cors Tech
+                    </span>
+                </div>
+                <div class="name">
+                    <h1>Bienvenue Alexandre</h1>
+                </div>
+                <div class="propic">
+                    <img src="images/user_dashboard/propic.png" alt="not-found">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--=======================================================
+                       01. Header Section End
+   ==========================================================-->
+
+
+
+    <!--=======================================================
+                       02. Dashboard Section Start
+   ==========================================================-->
+
+    <section id="dashboard_section">
+        <div class="container_fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="user_dashboard_sidebar">
+                        <div class="side_bar_top">
+                            <h3>
+                                Alexandre Gracias
+                            </h3>
+                            <input type="text" class="form-control" placeholder="Alexandre. Gracias@gmail.com">
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link">Points Cors <span>65</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="formations-tab" data-toggle="tab" href="#formations" role="tab" aria-controls="formations" aria-selected="false">Mes formations</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="messagerie-tab" data-toggle="tab" href="#messagerie" role="tab" aria-controls="messagerie" aria-selected="false">Messagerie
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="reductions-tab" data-toggle="tab" href="#reductions" role="tab" aria-controls="reductions" aria-selected="false">Réductions</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner" aria-selected="false">Profil partner</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="reglage-tab" data-toggle="tab" href="#reglage" role="tab" aria-controls="reglage" aria-selected="false">reglage</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="aides-tab" data-toggle="tab" href="#aides" role="tab" aria-controls="aides" aria-selected="false">Aides</a>
+                            </li>
+                        </ul>
+                        <div class="activer d-flex justify-content-between align-items-center">
+                            <h4>Activer Profil Public</h4>
+                            <div class="toggle_switch">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <form action="">
+                            <button>Access Formature</button>
+                            <button>Deconxion</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="formations" role="tabpanel" aria-labelledby="formations-tab">
+                        </div>
+                        <div class="tab-pane fade" id="messagerie" role="tabpanel" aria-labelledby="messagerie-tab">omnis odit perspiciatis.
+                        </div>
+                        <div class="tab-pane fade" id="reductions" role="tabpanel" aria-labelledby="reductions-tab">dolorem dolores dolorum omnis odit perspiciatis.
+                        </div>
+                        <div class="tab-pane fade" id="partner" role="tabpanel" aria-labelledby="partner-tab">repudiandae</div>
+                        <div class="tab-pane fade active show" id="reglage" role="tabpanel" aria-labelledby="reglage-tab">
+                            <div class="main_user_dashbaord">
+                                <div class="heading pb-30">
+                                    <h3>Profile information</h3>
+                                    <p>
+                                        Update your account's profile information and email adress
+                                    </p>
+                                </div>
+                                <div class="user_dahsboard_form">
+                                    <form action="">
+                                        <div class="form_1">
+                                            <div class="pro_pic">
+                                                <img src="images/user_dashboard/propic.png" alt="notfound">
+                                                <div class="age_btn">
+                                                    <a href="#">Modifier la photo de profile</a>
+                                                    <div class="age">
+                                                        <label for="age">Age</label>
+                                                        <select name="age" id="age">
+                                                            <option value="volvo">20</option>
+                                                            <option value="saab">21</option>
+                                                            <option value="mercedes">22</option>
+                                                            <option value="audi">24</option>
+                                                            <option value="audi">25</option>
+                                                            <option value="audi">26</option>
+                                                            <option value="audi">27</option>
+                                                            <option value="audi">28</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fname">Prénom</label>
+                                                <input type="text" id="fname" placeholder="Alexandre" class="form-control name">
+                                                <label for="lastname">Nom</label>
+                                                <input type="text" id="lastname" placeholder="Gracias" class="form-control name">
+                                                <label for="email">Email
+                                                </label>
+                                                <input type="text" id="email" placeholder="Alexandre. Gracias@gmail.com" class="form-control">
+                                                <button>Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="heading pt-10">
+                                            <h3> Password</h3>
+                                            <p>
+                                                Ensure your acount is using a long, random password to stay secure
+                                            </p>
+                                        </div>
+                                        <div class="form_2">
+                                            <div class="form-group name">
+                                                <label for="cpass">Current Password</label>
+                                                <input type="password" id="cpass" class="form-control">
+                                                <label for="npass">New password</label>
+                                                <input type="password" id="npass" class="form-control">
+                                                <label for="npass">Confirm password
+                                                </label>
+                                                <input type="password" id="npass" class="form-control">
+                                                <button>Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="heading pt-10">
+                                            <h3>Two factor authentication</h3>
+                                            <p>
+                                                Add additional security to your acount using two factor authentification
+                                            </p>
+                                            <div class="bottom_p pl-15">
+                                                <p>You have not enabled two factor authentification</p>
+                                                <p class="mt-0">
+                                                    When two factor authentication is enabled, you will be prompted for
+                                                    a secure, random token during authentication. You may retrieve this
+                                                    token from your phone's Google Authenticator application.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <button>Enable</button>
+                                        <div class="heading pt-10">
+                                            <h3>Two factor authentication</h3>
+                                            <p>
+                                                Add additional security to your acount using two factor authentification
+                                            </p>
+                                            <div class="bottom_p pl-15">
+                                                <p>You have not enabled two factor authentification</p>
+                                                <p class="mt-0">
+                                                    When two factor authentication is enabled, you will be prompted for
+                                                    a secure, random token during authentication. You may retrieve this
+                                                    token from your phone's Google Authenticator application.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <button>Enable</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="aides" role="tabpanel" aria-labelledby="aides-tab">voluptates nam dolore
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=======================================================
+                       02. Dashboard Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       03. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       03. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       04. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       04. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       05. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       05. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       06. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       06. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       07. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       07. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       08. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       08. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       09. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       09. Header Section End
+   ==========================================================-->
+
+    <!--=======================================================
+                       10. Header Section Start
+   ==========================================================-->
+
+    <!--=======================================================
+                       10. Header Section End
+   ==========================================================-->
+
+
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
